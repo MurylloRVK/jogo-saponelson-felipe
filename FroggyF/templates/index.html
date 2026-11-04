@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐸 Frogger</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+
+    <h1>🐸 FROGGER</h1>
+
+    <div id="hud">
+        <span>🏆 Pontos: <span id="score">0</span></span>
+        <span>❤️ Vidas: <span id="lives">3</span></span>
+        <span>🌎 Fase: <span id="level">1</span>/5</span>
+        <span>🪙 Moedas: <span id="coins">0</span></span>
+    </div>
+
+    <div id="progressContainer">
+        <div id="progress"></div>
+    </div>
+
+    <canvas id="game" width="800" height="700"></canvas>
+
+    <button id="restart">🔄 Reiniciar</button>
+
+</body>
+</html>
